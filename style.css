@@ -117,17 +117,17 @@ ul li {
     margin-bottom: 20px;
 }
 
-.project-list {
+.list {
     margin-top: 10px;
 }
 
-.project-list a {
+.list a {
     font-size: 18px;
     color: #3498db;
     text-decoration: none;
 }
 
-.project-list a:hover {
+.list a:hover {
     text-decoration: underline;
 }
 
