@@ -4,32 +4,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Currículo de Alexya</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    crossorigin="anonymous" />
+  <title>Currículo - Alexya Moraes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <!-- Link para o arquivo CSS externo -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="curriculo">
-    <h1>Alexya Viana 💻</h1>
-    <p>🚀 Engenheira de Software com paixão por criar sistemas que fazem a diferença!</p>
-    <p>👩‍💻 Experiência em desenvolvimento de sistemas públicos e habitação.</p>
-    <p>🌱 Sempre aprendendo: atualmente explorando efeitos CSS e animações!</p>
-    <div class="stack">
-      <h2>Stacks <i class="fa-solid fa-laptop-code"></i></h2>
-      <div class="stack-columns" id="stack-columns"></div>
-    </div>
-    <div class="emoticon">✨⚡💡</div>
-    <div class="links">
-      <a href="https://github.com/stuffalex" target="_blank">
-        <i class="fa-brands fa-github"></i> GitHub
-      </a>
-      <a href="https://www.linkedin.com/in/alexya-viana/" target="_blank">
-        <i class="fa-brands fa-linkedin"></i>
-        LinkedIn</a>
-    </div>
+
+  <div class="container">
+    <!-- Seção de Cabeçalho -->
+    <header>
+      <h1>Alexya Moraes</h1>
+      <p>Full-Stack Developer | Apaixonada por tecnologia</p>
+      <div class="badge-container">
+        <a href="mailto:alexyavianaa@gmail.com" class="email">
+          <i class="fas fa-envelope"></i> Email
+        </a>
+        <a href="https://linkedin.com/in/alexya-viana" class="linkedin">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://www.credly.com/users/alexya-viana" class="credly">
+          <i class="fas fa-certificate"></i> Credly
+        </a>
+      </div>
+    </header>
+
+    <!-- Seção de Sobre Mim -->
+    <section class="section">
+      <div class="section-title">Sobre Mim</div>
+      <p>Sou uma desenvolvedora Full-Stack com experiência em C#, .NET e JavaScript. Tenho paixão por criar soluções
+        tecnológicas que ajudam a melhorar a experiência dos usuários. Atualmente, estou expandindo meus conhecimentos
+        em React.js, Vue.js e práticas de desenvolvimento ágil.</p>
+    </section>
+
+    <!-- Seção de Tecnologias -->
+    <section class="section">
+      <div class="section-title">Tecnologias</div>
+      <div class="tech-icons">
+        <img src="https://img.shields.io/badge/-CSharp-239120?style=flat-square&logo=csharp&logoColor=white" alt="C#" />
+        <img src="https://img.shields.io/badge/-dotnet-512BD4?style=flat-square&logo=dotnet&logoColor=white"
+          alt=".NET" />
+        <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"
+          alt="JavaScript" />
+        <img src="https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black"
+          alt="React" />
+        <img src="https://img.shields.io/badge/-Vue.js-4FC08D?style=flat-square&logo=vue.js&logoColor=white"
+          alt="Vue.js" />
+        <img src="https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white"
+          alt="Node.js" />
+        <img src="https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white"
+          alt="Python" />
+      </div>
+    </section>
+
+    <!-- Seção de Projetos -->
+    <section class="section">
+      <div class="section-title">Projetos em Destaque</div>
+      <div class="project-list">
+        <ul>
+          <li><a href="https://github.com/stuffalex/gerfarm">GerFarm</a> - Gestão de fazendas com C# e .NET.</li>
+          <li><a href="https://github.com/stuffalex/CTeEmissor">CTeEmissor</a> - API para emissão de CTe com C# e .NET.
+          </li>
+          <li><a href="https://github.com/stuffalex/copia-spotify-full-stack">Cópia do Spotify</a> - Recriação do
+            Spotify com React e Node.js.</li>
+          <li><a href="https://github.com/stuffalex/desafio-tech">Desafio Energia</a> - SPA para seleção de fornecedores
+            de energia com Flask e React.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- GitHub Stats -->
+    <section class="section">
+      <div class="section-title">GitHub Stats</div>
+      <div class="center">
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=stuffalex&theme=blueberry&hide_border=true"
+          alt="GitHub Streak" />
+        <img
+          src="https://github-readme-stats.vercel.app/api/top-langs/?username=stuffalex&layout=compact&theme=blueberry&hide_border=true"
+          alt="Top Languages" />
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+      <p>🚀 Sempre explorando novas tecnologias e aprimorando minhas habilidades!</p>
+    </footer>
   </div>
+
 </body>
-  <script src="script.js"></script>
+
 </html>
