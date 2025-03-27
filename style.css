@@ -67,6 +67,14 @@ header p {
     background-color: #3498db;
 }
 
+.github {
+    background-color: #333;
+}
+
+.github:hover {
+    opacity: 0.8;
+}
+
 .credly {
     background-color: #f39c12;
 }
