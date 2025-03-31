@@ -112,6 +112,47 @@
       </div>
     </section>
 
+    <!-- Seção de Orçamento -->
+    <section class="section">
+      <div class="section-title">Solicitar Orçamento</div>
+      <form action="https://formspree.io/f/xyzedapl" method="POST" class="budget-form" id="budgetForm">
+        <div class="form-group">
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="projectType">Tipo de Projeto</label>
+          <select id="projectType" name="projectType" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="website">Website</option>
+            <option value="webapp">Aplicação Web</option>
+            <option value="mobile">Aplicativo Mobile</option>
+            <option value="api">API/Backend</option>
+            <option value="consulting">Consultoria</option>
+            <option value="other">Outro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="description">Descrição do Projeto</label>
+          <textarea id="description" name="description" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="budget">Orçamento Previsto (opcional)</label>
+          <input type="number" id="budget" name="budget" step="0.01" min="0.01" placeholder="R$ 0,00">
+        </div>
+        <div class="form-group">
+          <label for="timeline">Prazo Estimado (opcional)</label>
+          <input type="text" id="timeline" name="timeline" placeholder="Ex: 2 meses">
+        </div>
+        <button type="submit" class="submit-btn">Enviar Solicitação</button>
+        <div id="form-status" class="form-status"></div>
+      </form>
+    </section>
+
     <!-- Rodapé -->
     <footer>
       <p>🚀 Sempre explorando novas tecnologias e aprimorando minhas habilidades!</p>
@@ -119,5 +160,56 @@
   </div>
 
 </body>
+
+<script>
+  document.getElementById('budgetForm').addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const submitBtn = form.querySelector('button[type="submit"]');
+    var valor = document.getElementById("budget").value;
+    var valorBudget = valor.toLocaleString("pt-BR",
+      { style: "currency", currency: "BRL" });
+    console.log(valorBudget);
+    const statusElement = document.getElementById('form-status');
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Enviando...';
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        statusElement.textContent = 'Solicitação enviada com sucesso! Entrarei em contato em breve.';
+        statusElement.className = 'form-status success';
+        form.reset();
+      } else {
+        const errorData = await response.json();
+        if (errorData.errors) {
+          statusElement.textContent = errorData.errors.map(error => error.message).join(', ');
+        } else {
+          statusElement.textContent = 'Ocorreu um erro ao enviar o formulário. Por favor, tente novamente.';
+        }
+        statusElement.className = 'form-status error';
+      }
+    } catch (error) {
+      statusElement.textContent = 'Ocorreu um erro de conexão. Por favor, tente novamente mais tarde.';
+      statusElement.className = 'form-status error';
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Enviar Solicitação';
+
+      setTimeout(() => {
+        statusElement.style.display = 'none';
+      }, 5000);
+    }
+  });
+</script>
 
 </html>
