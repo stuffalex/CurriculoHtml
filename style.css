@@ -143,3 +143,61 @@ footer {
     font-size: 16px;
     color: #7f8c8d;
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    .badge-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .badge-container a {
+        font-size: 16px;
+        padding: 6px 15px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .tech-icons {
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .tech-icons img {
+        width: 100px;
+        height: auto;
+    }
+
+    .center {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .center img {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    ul li {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
