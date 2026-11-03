@@ -55,10 +55,16 @@
           <span class="lang lang-en">Download DOCX</span>
         </a>
 
+        <a href="#servicos" class="action-btn" title="Conhecer Serviços e Consultoria Especializada">
+          <i class="fas fa-layer-group"></i>
+          <span class="lang lang-pt">Serviços &amp; Consultoria</span>
+          <span class="lang lang-en">Services &amp; Consulting</span>
+        </a>
+
         <a href="#orcamento" class="action-btn action-btn-primary" title="Solicitar Orçamento / Projeto">
           <i class="fas fa-paper-plane"></i>
-          <span class="lang lang-pt">Solicitar Projeto</span>
-          <span class="lang lang-en">Request Project</span>
+          <span class="lang lang-pt">Fazer Pedido</span>
+          <span class="lang lang-en">Request Service</span>
         </a>
       </div>
     </div>
@@ -650,19 +656,357 @@
       </div>
     </section>
 
+    <!-- SEÇÃO: Serviços & Consultoria Especializada (Catálogo e Pedidos de Serviço) -->
+    <section class="resume-section web-only-section" id="servicos">
+      <h3 class="section-title">
+        <span class="lang lang-pt">SERVIÇOS &amp; CONSULTORIA ESPECIALIZADA</span>
+        <span class="lang lang-en">SPECIALIZED SERVICES &amp; CONSULTING</span>
+      </h3>
+      
+      <p class="services-intro-text lang lang-pt">
+        Soluções completas de engenharia de software com padrão corporativo: desde páginas e templates de alta conversão até o desenvolvimento de módulos sob medida, refatoração de código com Clean Architecture e consultoria com Strangler Fig Pattern para evolução segura de sistemas legados complexos com zero downtime.
+      </p>
+      <p class="services-intro-text lang lang-en">
+        Enterprise-grade software engineering solutions: from high-converting landing pages and corporate websites to custom feature development, Clean Architecture refactoring, and specialized Strangler Fig consulting for zero-downtime legacy systems evolution.
+      </p>
+
+      <div class="services-grid">
+        
+        <!-- SERVIÇO 1: Web Page Templates (Vendas & Institucional) -->
+        <article class="service-card" id="card-service-web">
+          <div class="service-card-header">
+            <div class="service-icon-wrapper">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <span class="service-badge">
+              <span class="lang lang-pt">Templates Web</span>
+              <span class="lang lang-en">Web Templates</span>
+            </span>
+          </div>
+
+          <h4 class="service-title">
+            <span class="lang lang-pt">Templates Web: Páginas de Vendas &amp; Sites Institucionais</span>
+            <span class="lang lang-en">Web Templates: Sales Landing Pages &amp; Corporate Sites</span>
+          </h4>
+
+          <p class="service-desc lang lang-pt">
+            Desenvolvimento de landing pages focadas em alta conversão e websites institucionais completos para fortalecer a credibilidade da sua marca e gerar negócios.
+          </p>
+          <p class="service-desc lang lang-en">
+            High-converting sales landing pages and sleek corporate websites designed to build brand authority and generate consistent business leads.
+          </p>
+
+          <ul class="service-features-list">
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span class="lang lang-pt"><strong>Páginas de Vendas:</strong> Copy estruturada, CTAs estratégicos, gatilhos de conversão e integração direta com WhatsApp ou Checkout.</span>
+              <span class="lang lang-en"><strong>Sales Landing Pages:</strong> High-conversion copywriting layout, strategic CTAs, and direct WhatsApp or Checkout integration.</span>
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span class="lang lang-pt"><strong>Sites Institucionais:</strong> Design corporativo refinado, páginas completas (Sobre, Serviços, Contato) e formulários seguros.</span>
+              <span class="lang lang-en"><strong>Corporate Websites:</strong> Modern brand identity, comprehensive sections (About, Services, Contact), and inquiry forms.</span>
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span class="lang lang-pt"><strong>Performance &amp; SEO:</strong> Carregamento ultra-rápido, métricas Core Web Vitals otimizadas e SEO semântico para o Google.</span>
+              <span class="lang lang-en"><strong>Performance &amp; SEO:</strong> Fast load times, Core Web Vitals optimization, and semantic SEO best practices for search engines.</span>
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span class="lang lang-pt"><strong>100% Responsivo:</strong> Experiência visual impecável e adaptada para smartphones, tablets e desktops.</span>
+              <span class="lang lang-en"><strong>100% Responsive:</strong> Flawless cross-device user experience across mobile phones, tablets, and desktops.</span>
+            </li>
+          </ul>
+
+          <div class="service-tech-tags">
+            <span>HTML5 Semântico</span>
+            <span>CSS Moderno</span>
+            <span>JavaScript / React</span>
+            <span>Core Web Vitals</span>
+            <span>WhatsApp / Checkout</span>
+          </div>
+
+          <div class="service-card-actions">
+            <button type="button" class="service-action-btn" onclick="selectServiceAndScroll('template-vendas')">
+              <i class="fas fa-bullhorn"></i>
+              <span class="lang lang-pt">Página de Vendas</span>
+              <span class="lang lang-en">Sales Landing Page</span>
+            </button>
+            <button type="button" class="service-action-btn" onclick="selectServiceAndScroll('template-institucional')">
+              <i class="fas fa-building"></i>
+              <span class="lang lang-pt">Site Institucional</span>
+              <span class="lang lang-en">Corporate Website</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- SERVIÇO 2: Features Específicas do Projeto -->
+        <article class="service-card" id="card-service-features">
+          <div class="service-card-header">
+            <div class="service-icon-wrapper">
+              <i class="fas fa-puzzle-piece"></i>
+            </div>
+            <span class="service-badge">
+              <span class="lang lang-pt">Sob Medida</span>
+              <span class="lang lang-en">Custom Features</span>
+            </span>
+          </div>
+
+          <h4 class="service-title">
+            <span class="lang lang-pt">Features Específicas &amp; Módulos Sob Demanda</span>
+            <span class="lang lang-en">Custom Features &amp; Tailored Project Modules</span>
+          </h4>
+
+          <p class="service-desc lang lang-pt">
+            Implementação de funcionalidades pontuais ou novos módulos para o seu sistema em produção, com integrações bancárias, fluxos financeiros e regras de negócio.
+          </p>
+          <p class="service-desc lang lang-en">
+            Implementation of targeted features or standalone modules for production systems, with banking integrations, financial flows, and business domain rules.
+          </p>
+
+          <ul class="service-features-list">
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span class="lang lang-pt"><strong>APIs &amp; Microsserviços:</strong> Criação de endpoints RESTful seguros, rápidos e documentados em Java (Spring Boot) ou C# (.NET).</span>
+              <span class="lang lang-en"><strong>APIs &amp; Microservices:</strong> Secure, high-throughput RESTful endpoints in Java (Spring Boot) or C# (.NET).</span>
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span class="lang lang-pt"><strong>Fluxos Financeiros:</strong> Geração de boletos, conciliação e parsing de arquivos bancários em XML/CNAB.</span>
+              <span class="lang lang-en"><strong>Financial Workflows:</strong> Boleto generation, bank file parsing (XML/CNAB), and automated reconciliation.</span>
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span class="lang lang-pt"><strong>Banco de Dados &amp; Otimização:</strong> Modelagem relacional e queries performáticas em PostgreSQL e SQL Server.</span>
+              <span class="lang lang-en"><strong>Database Optimization:</strong> Relational schema modeling and tuned queries in PostgreSQL and SQL Server.</span>
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span class="lang lang-pt"><strong>Integração Segura:</strong> Autenticação (JWT, OAuth2), webhooks, filas assíncronas e testes automatizados.</span>
+              <span class="lang lang-en"><strong>Secure Integrations:</strong> Auth (JWT, OAuth2), webhooks, async queues, and automated test coverage.</span>
+            </li>
+          </ul>
+
+          <div class="service-tech-tags">
+            <span>Java 25 / Spring Boot</span>
+            <span>C# / .NET Core</span>
+            <span>REST APIs / Swagger</span>
+            <span>Boletos &amp; XML Bancário</span>
+            <span>PostgreSQL / SQL Server</span>
+          </div>
+
+          <div class="service-card-actions">
+            <button type="button" class="service-action-btn" onclick="selectServiceAndScroll('feature-especifica')">
+              <i class="fas fa-code"></i>
+              <span class="lang lang-pt">Solicitar Feature Específica</span>
+              <span class="lang lang-en">Request Custom Feature</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- SERVIÇO 3: Refatoração de Código & Redução de Débito Técnico -->
+        <article class="service-card" id="card-service-refactoring">
+          <div class="service-card-header">
+            <div class="service-icon-wrapper">
+              <i class="fas fa-broom"></i>
+            </div>
+            <span class="service-badge">
+              <span class="lang lang-pt">Qualidade &amp; Resiliência</span>
+              <span class="lang lang-en">Quality &amp; Resilience</span>
+            </span>
+          </div>
+
+          <h4 class="service-title">
+            <span class="lang lang-pt">Refatoração de Código &amp; Redução de Débito Técnico</span>
+            <span class="lang lang-en">Code Refactoring &amp; Technical Debt Reduction</span>
+          </h4>
+
+          <p class="service-desc lang lang-pt">
+            Higienização de bases de código frágeis ou complexas ("código espaguete"), eliminando gargalos, elevando a manutenibilidade e reduzindo custos operacionais.
+          </p>
+          <p class="service-desc lang lang-en">
+            Restructuring of brittle, tangled codebases, removing bottlenecks, boosting testability and maintainability, and decreasing operational costs.
+          </p>
+
+          <ul class="service-features-list">
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span class="lang lang-pt"><strong>Clean &amp; Hexagonal Architecture:</strong> Desacoplamento do domínio com Use Cases puros e Portas e Adaptadores.</span>
+              <span class="lang lang-en"><strong>Clean &amp; Hexagonal Architecture:</strong> Domain decoupling with pure Use Cases and Ports &amp; Adapters.</span>
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span class="lang lang-pt"><strong>Composition Root &amp; IoC:</strong> Zero acoplamento de frameworks no domínio e injeção de dependências limpa.</span>
+              <span class="lang lang-en"><strong>Composition Root &amp; IoC:</strong> Zero framework coupling in the domain layer and clean dependency injection.</span>
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span class="lang lang-pt"><strong>Padrões GoF (Strategy &amp; Factory):</strong> Eliminação de if/else aninhados e regras extensíveis sem quebra (OCP).</span>
+              <span class="lang lang-en"><strong>GoF Patterns (Strategy &amp; Factory):</strong> Eradicating nested if/else statements and enabling open-closed extensibility (OCP).</span>
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span class="lang lang-pt"><strong>Testes Automatizados (AAA):</strong> Cobertura com JUnit 5, Mockito ou xUnit garantindo entrega com zero broken builds.</span>
+              <span class="lang lang-en"><strong>Automated Testing (AAA):</strong> Comprehensive JUnit 5, Mockito or xUnit coverage ensuring zero broken builds.</span>
+            </li>
+          </ul>
+
+          <div class="service-tech-tags">
+            <span>Clean Architecture</span>
+            <span>Hexagonal (Ports &amp; Adapters)</span>
+            <span>GoF Patterns</span>
+            <span>TDD / JUnit 5 / xUnit</span>
+            <span>Eliminação de Code Smells</span>
+          </div>
+
+          <div class="service-card-actions">
+            <button type="button" class="service-action-btn" onclick="selectServiceAndScroll('refatoracao')">
+              <i class="fas fa-sync-alt"></i>
+              <span class="lang lang-pt">Solicitar Refatoração de Código</span>
+              <span class="lang lang-en">Request Code Refactoring</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- SERVIÇO 4: CONSULTORIA para Sistemas Legados & Strangler Fig (DESTAQUE ENTERPRISE) -->
+        <article class="service-card card-featured" id="card-service-consulting">
+          <div class="service-card-header">
+            <div class="service-icon-wrapper">
+              <i class="fas fa-chess-knight"></i>
+            </div>
+            <span class="service-badge badge-featured">
+              <i class="fas fa-star"></i>
+              <span class="lang lang-pt">Destaque Enterprise</span>
+              <span class="lang lang-en">Enterprise Highlight</span>
+            </span>
+          </div>
+
+          <h4 class="service-title">
+            <span class="lang lang-pt">Consultoria para Sistemas Legados &amp; Strangler Fig Pattern</span>
+            <span class="lang lang-en">Legacy Systems Consulting &amp; Strangler Fig Pattern</span>
+          </h4>
+
+          <p class="service-desc lang lang-pt">
+            Diagnóstico arquitetural e planejamento estratégico de evolução para sistemas corporativos legados, executando a substituição gradual via Strangler Fig (Estrangulamento) — sem risco de "Big Bang" e com zero downtime.
+          </p>
+          <p class="service-desc lang lang-en">
+            Architectural diagnosis and strategic evolution roadmap for complex legacy systems, executing gradual migration via Strangler Fig Pattern — without "Big Bang" risks and with zero downtime.
+          </p>
+
+          <ul class="service-features-list">
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span class="lang lang-pt"><strong>Diagnóstico &amp; Plano Diretor:</strong> Auditoria de código legado, levantamento de riscos, mapeamento de dependências e roadmap de evolução.</span>
+              <span class="lang lang-en"><strong>Diagnosis &amp; Evolution Roadmap:</strong> Legacy code audit, risk assessment, dependency mapping, and step-by-step modernization strategy.</span>
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span class="lang lang-pt"><strong>Strangler Fig Pattern:</strong> Estrangulamento seguro e incremental do monólito; serviços novos convivem harmoniosamente com o legado.</span>
+              <span class="lang lang-en"><strong>Strangler Fig Pattern:</strong> Safe, incremental strangulation of monoliths; new services run seamlessly alongside legacy systems.</span>
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span class="lang lang-pt"><strong>Modernização de Stack:</strong> Migração de versões antigas de Java (Java 6/7/8 para Java 25 LTS) ou .NET clássico para versões modernas.</span>
+              <span class="lang lang-en"><strong>Stack Modernization:</strong> Legacy language upgrade (Java 6/7/8 to modern Java 25 LTS) and legacy .NET modernization.</span>
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span class="lang lang-pt"><strong>Zero Downtime &amp; Governança:</strong> Roteamento inteligente via API Gateway / Proxy reverso, documentação viva e mentoria do time.</span>
+              <span class="lang lang-en"><strong>Zero Downtime &amp; Governance:</strong> Smart routing via API Gateways / Reverse Proxies, documentation, and technical team mentoring.</span>
+            </li>
+          </ul>
+
+          <div class="service-tech-tags">
+            <span>Strangler Fig Pattern</span>
+            <span>Migração Java 6/7/8 -> Java 25 LTS</span>
+            <span>Modernização de Monólitos</span>
+            <span>Zero Downtime / Gateway</span>
+            <span>Auditoria Arquitetural</span>
+          </div>
+
+          <div class="service-card-actions">
+            <button type="button" class="service-action-btn" onclick="selectServiceAndScroll('consultoria-legados')">
+              <i class="fas fa-clipboard-check"></i>
+              <span class="lang lang-pt">Consultoria de Legados</span>
+              <span class="lang lang-en">Legacy Consulting</span>
+            </button>
+            <button type="button" class="service-action-btn" onclick="selectServiceAndScroll('strangler-fig')">
+              <i class="fas fa-network-wired"></i>
+              <span class="lang lang-pt">Migração Strangler Fig</span>
+              <span class="lang lang-en">Strangler Fig Migration</span>
+            </button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
     <!-- SEÇÃO: Solicitar Orçamento / Request a Project (Formulário Formspree) -->
     <section class="resume-section web-only-section" id="orcamento">
       <h3 class="section-title">
-        <span class="lang lang-pt">SOLICITAR ORÇAMENTO / PROJETO</span>
-        <span class="lang lang-en">REQUEST A PROJECT / QUOTE</span>
+        <span class="lang lang-pt">SOLICITAR SERVIÇO / ORÇAMENTO</span>
+        <span class="lang lang-en">REQUEST A SERVICE / QUOTE</span>
       </h3>
       
       <p class="form-intro-text lang lang-pt">
-        Tem um projeto, modernização de sistema ou oportunidade de desenvolvimento em mente? Preencha os campos abaixo para conversarmos:
+        Precisa de um template web de vendas, site institucional, feature específica, refatoração ou consultoria para modernização de sistemas legados? Selecione a modalidade abaixo e envie sua mensagem:
       </p>
       <p class="form-intro-text lang lang-en">
-        Have an upcoming project, legacy modernization, or software engineering opportunity? Fill in the details below to get in touch:
+        Need a sales landing page, corporate website, custom feature, code refactoring, or legacy modernization consulting? Select an option below to get in touch:
       </p>
+
+      <!-- Seletor Rápido de Serviços (Pills Interativas) -->
+      <div class="service-quick-select" aria-label="Selecione o serviço desejado">
+        <span class="quick-select-label">
+          <i class="fas fa-hand-pointer"></i>
+          <span class="lang lang-pt">Selecione o tipo de serviço para personalizar o formulário:</span>
+          <span class="lang lang-en">Select service type to customize the request form:</span>
+        </span>
+        <div class="quick-select-pills" id="quickSelectPills">
+          <button type="button" class="service-pill" data-service="template-vendas">
+            <i class="fas fa-bullhorn"></i>
+            <span class="lang lang-pt">Página de Vendas</span>
+            <span class="lang lang-en">Sales Landing Page</span>
+          </button>
+          <button type="button" class="service-pill" data-service="template-institucional">
+            <i class="fas fa-building"></i>
+            <span class="lang lang-pt">Site Institucional</span>
+            <span class="lang lang-en">Corporate Website</span>
+          </button>
+          <button type="button" class="service-pill" data-service="feature-especifica">
+            <i class="fas fa-puzzle-piece"></i>
+            <span class="lang lang-pt">Feature Específica</span>
+            <span class="lang lang-en">Custom Feature</span>
+          </button>
+          <button type="button" class="service-pill" data-service="refatoracao">
+            <i class="fas fa-broom"></i>
+            <span class="lang lang-pt">Refatoração de Código</span>
+            <span class="lang lang-en">Code Refactoring</span>
+          </button>
+          <button type="button" class="service-pill" data-service="consultoria-legados">
+            <i class="fas fa-search-dollar"></i>
+            <span class="lang lang-pt">Consultoria Legados</span>
+            <span class="lang lang-en">Legacy Consulting</span>
+          </button>
+          <button type="button" class="service-pill" data-service="strangler-fig">
+            <i class="fas fa-network-wired"></i>
+            <span class="lang lang-pt">Strangler Fig (Sistemas Complexos)</span>
+            <span class="lang lang-en">Strangler Fig Migration</span>
+          </button>
+          <button type="button" class="service-pill" data-service="outro">
+            <i class="fas fa-ellipsis-h"></i>
+            <span class="lang lang-pt">Outro / Parceria</span>
+            <span class="lang lang-en">Other / Partnership</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Caixa de Dica Contextual Dinâmica -->
+      <div id="service-hint-box" class="service-hint-box" style="display: none;">
+        <i class="fas fa-info-circle"></i>
+        <span id="service-hint-text"></span>
+      </div>
 
       <form action="https://formspree.io/f/xyzedapl" method="POST" class="budget-form" id="budgetForm" novalidate>
         
@@ -702,24 +1046,41 @@
           <!-- Tipo de Projeto -->
           <div class="form-group">
             <label for="projectType">
-              <span class="lang lang-pt">Tipo de Projeto *</span>
-              <span class="lang lang-en">Project Type *</span>
+              <span class="lang lang-pt">Tipo de Serviço ou Consultoria *</span>
+              <span class="lang lang-en">Service or Consulting Type *</span>
             </label>
             <div class="input-with-icon">
               <i class="fas fa-layer-group"></i>
               <select id="projectType" name="projectType" required>
-                <option value="" disabled selected data-text-pt="Selecione uma opção..." data-text-en="Select an option...">Selecione uma opção...</option>
-                <option value="modernizacao" data-text-pt="Modernização / Migração de Legados" data-text-en="Legacy Modernization / Migration">Modernização / Migração de Legados</option>
-                <option value="api" data-text-pt="API / Microsserviços / Backend (Java/C#)" data-text-en="API / Microservices / Backend (Java/C#)">API / Microsserviços / Backend (Java/C#)</option>
-                <option value="webapp" data-text-pt="Aplicação Web Full Stack" data-text-en="Full Stack Web Application">Aplicação Web Full Stack</option>
-                <option value="website" data-text-pt="Website Institucional" data-text-en="Corporate Website">Website Institucional</option>
-                <option value="banco-dados" data-text-pt="Otimização e Modelagem de Banco de Dados" data-text-en="Database Optimization & Modeling">Otimização e Modelagem de Banco de Dados</option>
-                <option value="consultoria" data-text-pt="Consultoria Técnica / Arquitetura" data-text-en="Technical Consulting / Architecture">Consultoria Técnica / Arquitetura</option>
-                <option value="other" data-text-pt="Outro" data-text-en="Other">Outro</option>
+                <option value="" disabled selected data-text-pt="Selecione o serviço ou consultoria..." data-text-en="Select service or consulting type...">Selecione o serviço ou consultoria...</option>
+                <option value="template-vendas" data-text-pt="Templates Web: Página de Vendas (Landing Page de Conversão)" data-text-en="Web Templates: Sales Landing Page (High Conversion)">Templates Web: Página de Vendas (Landing Page de Conversão)</option>
+                <option value="template-institucional" data-text-pt="Templates Web: Website Institucional Completo" data-text-en="Web Templates: Corporate Institutional Website">Templates Web: Website Institucional Completo</option>
+                <option value="feature-especifica" data-text-pt="Feature Específica / Módulo Sob Demanda (APIs, Java/C#)" data-text-en="Custom Feature / Tailored Module (APIs, Java/C#)">Feature Específica / Módulo Sob Demanda (APIs, Java/C#)</option>
+                <option value="refatoracao" data-text-pt="Refatoração de Código &amp; Redução de Débito Técnico" data-text-en="Code Refactoring &amp; Technical Debt Reduction">Refatoração de Código &amp; Redução de Débito Técnico</option>
+                <option value="consultoria-legados" data-text-pt="Consultoria: Diagnóstico e Planejamento de Sistemas Legados" data-text-en="Consulting: Legacy Systems Diagnosis &amp; Planning">Consultoria: Diagnóstico e Planejamento de Sistemas Legados</option>
+                <option value="strangler-fig" data-text-pt="Migração Incremental: Strangler Fig Pattern (Sistemas Complexos)" data-text-en="Incremental Migration: Strangler Fig Pattern (Complex Systems)">Migração Incremental: Strangler Fig Pattern (Sistemas Complexos)</option>
+                <option value="outro" data-text-pt="Outro Projeto / Parceria Técnica" data-text-en="Other Project / Technical Partnership">Outro Projeto / Parceria Técnica</option>
               </select>
             </div>
           </div>
 
+          <!-- Stack Tecnológica Atual ou Desejada -->
+          <div class="form-group">
+            <label for="techStack">
+              <span class="lang lang-pt">Stack Tecnológica Atual ou Desejada (opcional)</span>
+              <span class="lang lang-en">Current or Target Tech Stack (optional)</span>
+            </label>
+            <div class="input-with-icon">
+              <i class="fas fa-microchip"></i>
+              <input type="text" id="techStack" name="techStack"
+                     placeholder="Ex: Java 8/25, Spring, C#, .NET, PostgreSQL, React..."
+                     data-placeholder-pt="Ex: Java 8/25, Spring, C#, .NET, PostgreSQL, React..."
+                     data-placeholder-en="e.g. Java 8/25, Spring, C#, .NET, PostgreSQL, React...">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row-2">
           <!-- Orçamento Previsto -->
           <div class="form-group">
             <label for="budget">
@@ -734,28 +1095,28 @@
                      data-placeholder-en="$ 0.00">
             </div>
           </div>
-        </div>
 
-        <!-- Prazo Estimado -->
-        <div class="form-group">
-          <label for="timeline">
-            <span class="lang lang-pt">Prazo Estimado (opcional)</span>
-            <span class="lang lang-en">Estimated Timeline (optional)</span>
-          </label>
-          <div class="input-with-icon">
-            <i class="fas fa-clock"></i>
-            <input type="text" id="timeline" name="timeline"
-                   placeholder="Ex: 1 a 2 meses"
-                   data-placeholder-pt="Ex: 1 a 2 meses"
-                   data-placeholder-en="e.g. 1 to 2 months">
+          <!-- Prazo Estimado -->
+          <div class="form-group">
+            <label for="timeline">
+              <span class="lang lang-pt">Prazo Estimado (opcional)</span>
+              <span class="lang lang-en">Estimated Timeline (optional)</span>
+            </label>
+            <div class="input-with-icon">
+              <i class="fas fa-clock"></i>
+              <input type="text" id="timeline" name="timeline"
+                     placeholder="Ex: 2 a 4 semanas"
+                     data-placeholder-pt="Ex: 2 a 4 semanas"
+                     data-placeholder-en="e.g. 2 to 4 weeks">
+            </div>
           </div>
         </div>
 
         <!-- Descrição do Projeto -->
         <div class="form-group">
           <label for="description">
-            <span class="lang lang-pt">Descrição do Projeto e Necessidades *</span>
-            <span class="lang lang-en">Project Description & Requirements *</span>
+            <span class="lang lang-pt">Descrição da Necessidade / Escopo do Projeto *</span>
+            <span class="lang lang-en">Project Scope &amp; Requirements *</span>
           </label>
           <textarea id="description" name="description" rows="4" required
                     placeholder="Conte sobre os objetivos, tecnologias desejadas, escopo e desafios do projeto..."
@@ -765,8 +1126,8 @@
 
         <button type="submit" class="submit-btn" id="submitBtn">
           <i class="fas fa-paper-plane"></i>
-          <span class="lang lang-pt">Enviar Solicitação</span>
-          <span class="lang lang-en">Send Request</span>
+          <span class="lang lang-pt">Enviar Pedido de Serviço</span>
+          <span class="lang lang-en">Submit Service Request</span>
         </button>
 
         <div id="form-status" class="form-status" role="alert" aria-live="polite"></div>
@@ -859,6 +1220,143 @@
           opt.textContent = text;
         }
       });
+
+      // Atualiza dica contextual e placeholder do serviço ativo se houver
+      const projectTypeSelect = document.getElementById('projectType');
+      if (projectTypeSelect && projectTypeSelect.value && serviceDetails[projectTypeSelect.value]) {
+        const selected = projectTypeSelect.value;
+        const hintText = document.getElementById('service-hint-text');
+        if (hintText) {
+          hintText.textContent = serviceDetails[selected].hint[lang];
+        }
+        const descTextarea = document.getElementById('description');
+        if (descTextarea && (!descTextarea.value || descTextarea.value.trim() === '')) {
+          descTextarea.placeholder = serviceDetails[selected].placeholder[lang];
+        }
+      }
+    }
+
+    // Mapas de Dicas Contextuais e Placeholders por Tipo de Serviço
+    const serviceDetails = {
+      'template-vendas': {
+        hint: {
+          pt: '💡 Dica: Diga qual é o seu produto/serviço, público-alvo, objetivo principal (geração de leads, checkout, agendamento) e se já possui referências visuais.',
+          en: '💡 Tip: Mention your product/service, target audience, primary conversion goal (leads, checkout, bookings), and visual references.'
+        },
+        placeholder: {
+          pt: 'Conte sobre seu produto/serviço, público-alvo, objetivo da página de vendas (leads, checkout, WhatsApp) e referências visuais que você aprecia...',
+          en: 'Tell me about your product/service, target audience, conversion goal (lead capture, direct checkout, WhatsApp), and visual references you admire...'
+        }
+      },
+      'template-institucional': {
+        hint: {
+          pt: '💡 Dica: Conte sobre sua empresa, páginas necessárias (Sobre, Serviços, Contato, Portfólio) e se necessita de integrações específicas.',
+          en: '💡 Tip: Tell me about your company, required sections (About, Services, Contact, Portfolio), and any specific integrations needed.'
+        },
+        placeholder: {
+          pt: 'Conte sobre sua empresa, páginas necessárias (Sobre, Serviços, Portfólio, Contato), identidade visual e integrações desejadas...',
+          en: 'Tell me about your company, required pages (About, Services, Portfolio, Contact), brand identity, and desired integrations...'
+        }
+      },
+      'feature-especifica': {
+        hint: {
+          pt: '💡 Dica: Descreva o comportamento da funcionalidade, regras de negócio principais, se envolve APIs REST, integrações bancárias ou relatórios.',
+          en: '💡 Tip: Detail the expected feature behavior, key business logic, and whether it involves REST APIs, banking/financial integrations, or custom reporting.'
+        },
+        placeholder: {
+          pt: 'Descreva a funcionalidade ou módulo desejado, regras de negócio principais, sistemas existentes e tecnologias envolvidas...',
+          en: 'Describe the desired custom feature or module, key business rules, existing architecture, and involved tech stack...'
+        }
+      },
+      'refatoracao': {
+        hint: {
+          pt: '💡 Dica: Aponte as maiores dores atuais (código acoplado, lentidão, bugs recorrentes, falta de testes) e metas de qualidade (Clean Architecture, TDD).',
+          en: '💡 Tip: Highlight current pain points (tight coupling, slow execution, frequent bugs, missing tests), and target goals (Clean Architecture, TDD).'
+        },
+        placeholder: {
+          pt: 'Descreva o estado atual do código, principais problemas (lentidão, bugs, débito técnico, falta de testes) e metas de qualidade esperadas...',
+          en: 'Describe current codebase condition, main pain points (performance, bugs, tech debt, lack of tests), and quality goals...'
+        }
+      },
+      'consultoria-legados': {
+        hint: {
+          pt: '💡 Dica: Informe a stack do sistema legado (ex: Java 6/7/8 ou .NET clássico), volume de dados, dependências e se o objetivo é diagnóstico, plano diretor ou modernização.',
+          en: '💡 Tip: State your legacy system tech stack (e.g. Java 6/7/8 or classic .NET), data volume, dependencies, and whether you need an audit, diagnosis, or evolution roadmap.'
+        },
+        placeholder: {
+          pt: 'Descreva seu sistema legado (linguagem/versão, ex: Java 6/7/8 ou .NET clássico), banco de dados, principais gargalos e metas do planejamento de evolução...',
+          en: 'Describe your legacy system (tech stack/versions, e.g. Java 6/7/8 or legacy .NET), database, key bottlenecks, and evolution roadmap goals...'
+        }
+      },
+      'strangler-fig': {
+        hint: {
+          pt: '💡 Dica: Descreva o monólito crítico, quais módulos devem ser estrangulados primeiro, restrições de zero downtime e requisitos de API Gateway.',
+          en: '💡 Tip: Detail the critical monolith, which modules should be strangled first, zero-downtime constraints, and API Gateway/reverse proxy requirements.'
+        },
+        placeholder: {
+          pt: 'Conte sobre a arquitetura do monólito complexo a ser migrado, módulos críticos a estrangular gradualmente, requisitos de zero downtime e prazos...',
+          en: 'Tell me about the complex monolith architecture to be migrated, critical modules to strangle gradually, zero-downtime requirements, and timeline...'
+        }
+      },
+      'outro': {
+        hint: {
+          pt: '💡 Dica: Fique à vontade para descrever qualquer outra necessidade de engenharia, parceria ou oportunidade técnica.',
+          en: '💡 Tip: Feel free to describe any other software engineering requirement, technical partnership, or consulting opportunity.'
+        },
+        placeholder: {
+          pt: 'Conte sobre os objetivos, tecnologias desejadas, escopo e desafios do seu projeto...',
+          en: 'Tell me about your project goals, desired tech stack, scope, and key challenges...'
+        }
+      }
+    };
+
+    // Função de Seleção Rápida de Serviço e Rolagem Suave
+    function selectServiceAndScroll(serviceType) {
+      const select = document.getElementById('projectType');
+      if (select) {
+        select.value = serviceType;
+        updateServiceState(serviceType);
+      }
+      const formSection = document.getElementById('orcamento');
+      if (formSection) {
+        formSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        setTimeout(() => {
+          const firstInput = document.getElementById('name');
+          if (firstInput) firstInput.focus();
+        }, 450);
+      }
+    }
+
+    // Atualização de Estado das Pills e Dicas Contextuais
+    function updateServiceState(serviceType) {
+      const currentLang = document.documentElement.getAttribute('data-lang') || 'pt';
+
+      // Atualiza classe active nas pills
+      const pills = document.querySelectorAll('#quickSelectPills .service-pill');
+      pills.forEach(pill => {
+        if (pill.getAttribute('data-service') === serviceType) {
+          pill.classList.add('active');
+        } else {
+          pill.classList.remove('active');
+        }
+      });
+
+      // Atualiza caixa de dica contextual e placeholder
+      const hintBox = document.getElementById('service-hint-box');
+      const hintText = document.getElementById('service-hint-text');
+      const descTextarea = document.getElementById('description');
+
+      if (serviceDetails[serviceType]) {
+        if (hintBox && hintText) {
+          hintText.textContent = serviceDetails[serviceType].hint[currentLang];
+          hintBox.style.display = 'flex';
+        }
+        if (descTextarea && (!descTextarea.value || descTextarea.value.trim() === '')) {
+          descTextarea.placeholder = serviceDetails[serviceType].placeholder[currentLang];
+        }
+      } else {
+        if (hintBox) hintBox.style.display = 'none';
+      }
     }
 
     // Carrega idioma salvo ou padrão do navegador
@@ -874,6 +1372,27 @@
       } catch (e) {}
 
       setLanguage(initialLang);
+
+      // Inicialização dos cliques nas pills de serviço
+      const pills = document.querySelectorAll('#quickSelectPills .service-pill');
+      pills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          const service = pill.getAttribute('data-service');
+          const select = document.getElementById('projectType');
+          if (select) {
+            select.value = service;
+            updateServiceState(service);
+          }
+        });
+      });
+
+      // Sincronização da mudança no select de tipo de serviço
+      const projectTypeSelect = document.getElementById('projectType');
+      if (projectTypeSelect) {
+        projectTypeSelect.addEventListener('change', function() {
+          updateServiceState(this.value);
+        });
+      }
     });
 
     // Formatação do Campo de Orçamento
