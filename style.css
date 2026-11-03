@@ -597,6 +597,21 @@ a.contact-item:hover {
   color: #075985;
 }
 
+.status-lib {
+  background-color: #f3e8ff;
+  color: #6b21a8;
+}
+
+.status-backend {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+.status-frontend {
+  background-color: #ccfbf1;
+  color: #115e59;
+}
+
 .project-desc {
   font-size: 13.5px;
   color: var(--text-secondary);
